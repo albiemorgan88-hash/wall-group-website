@@ -1,0 +1,804 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Wall Group - At the Heart of the Community</title>
+    <meta name="description" content="The Wall Group operates over a dozen stores across Belfast and Northern Ireland, including SPAR, Subway, YoggieBerrie, and filling stations. Employing 250+ staff and serving 5+ million customers annually.">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'spar-green': '#00843D',
+                        'wall-blue': '#1e3a8a',
+                        'wall-grey': '#64748b'
+                    },
+                    fontFamily: {
+                        'display': ['ui-serif', 'Georgia', 'Cambria', 'Times New Roman', 'Times', 'serif'],
+                        'body': ['ui-sans-serif', 'system-ui', '-apple-system', 'BlinkMacSystemFont', 'Segoe UI', 'Roboto', 'Helvetica Neue', 'Arial', 'Noto Sans', 'sans-serif']
+                    }
+                }
+            }
+        }
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Inter', sans-serif; }
+        .font-display { font-family: 'Playfair Display', serif; }
+        .gradient-bg { background: linear-gradient(135deg, #1e3a8a 0%, #00843D 100%); }
+        .hero-gradient { background: linear-gradient(135deg, rgba(30, 58, 138, 0.95) 0%, rgba(0, 132, 61, 0.9) 100%); }
+        .store-card { background: linear-gradient(145deg, #ffffff 0%, #f8fafc 100%); }
+        .service-gradient { background: linear-gradient(145deg, #f1f5f9 0%, #e2e8f0 100%); }
+        .animate-float { animation: float 6s ease-in-out infinite; }
+        @keyframes float { 0%, 100% { transform: translateY(0px); } 50% { transform: translateY(-20px); } }
+        .hover-lift { transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1); }
+        .hover-lift:hover { transform: translateY(-8px); box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04); }
+        .parallax-bg { background-attachment: fixed; background-position: center; background-repeat: no-repeat; background-size: cover; }
+        .text-shadow { text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3); }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-900 leading-relaxed">
+    <!-- Navigation -->
+    <nav class="fixed top-0 left-0 right-0 z-50 bg-white/95 backdrop-blur-sm shadow-lg">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <div class="flex-shrink-0">
+                    <span class="text-2xl font-display font-bold gradient-bg bg-clip-text text-transparent">The Wall Group</span>
+                </div>
+                <div class="hidden md:block">
+                    <div class="ml-10 flex items-baseline space-x-8">
+                        <a href="#home" class="text-gray-900 hover:text-spar-green transition-colors duration-200 font-medium">Home</a>
+                        <a href="#stores" class="text-gray-700 hover:text-spar-green transition-colors duration-200 font-medium">Our Stores</a>
+                        <a href="#about" class="text-gray-700 hover:text-spar-green transition-colors duration-200 font-medium">About</a>
+                        <a href="#services" class="text-gray-700 hover:text-spar-green transition-colors duration-200 font-medium">Services</a>
+                        <a href="#careers" class="text-gray-700 hover:text-spar-green transition-colors duration-200 font-medium">Careers</a>
+                        <a href="#contact" class="bg-spar-green text-white px-4 py-2 rounded-lg hover:bg-green-700 transition-colors duration-200 font-medium">Contact</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="relative h-screen flex items-center justify-center overflow-hidden">
+        <!-- Background with overlay -->
+        <div class="absolute inset-0 bg-gradient-to-br from-slate-900 via-blue-900 to-green-900"></div>
+        <div class="absolute inset-0 bg-black/20"></div>
+        
+        <!-- Animated background elements -->
+        <div class="absolute inset-0 overflow-hidden">
+            <div class="absolute -top-4 -right-4 w-72 h-72 bg-spar-green/10 rounded-full blur-3xl animate-float"></div>
+            <div class="absolute top-1/2 -left-8 w-96 h-96 bg-blue-500/10 rounded-full blur-3xl animate-float" style="animation-delay: -2s;"></div>
+            <div class="absolute bottom-0 right-1/3 w-80 h-80 bg-green-400/10 rounded-full blur-3xl animate-float" style="animation-delay: -4s;"></div>
+        </div>
+
+        <div class="relative z-10 text-center px-4 sm:px-6 lg:px-8">
+            <h1 class="text-5xl sm:text-6xl md:text-7xl font-display font-bold text-white mb-6 text-shadow">
+                The Wall Group
+            </h1>
+            <div class="flex items-center justify-center mb-8">
+                <div class="h-1 w-16 bg-spar-green mr-4"></div>
+                <p class="text-xl sm:text-2xl text-gray-200 font-medium">At the Heart of the Community</p>
+                <div class="h-1 w-16 bg-spar-green ml-4"></div>
+            </div>
+            <p class="text-lg sm:text-xl text-gray-300 mb-12 max-w-3xl mx-auto leading-relaxed">
+                From our first store in 2008 to today's network of 12+ locations across Belfast and Northern Ireland. 
+                Serving 5+ million customers annually with SPAR, Subway, YoggieBerrie, and premium filling stations.
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <a href="#stores" class="bg-spar-green text-white px-8 py-4 rounded-lg text-lg font-semibold hover:bg-green-700 transition-all duration-300 hover-lift">
+                    Find Your Local Store
+                </a>
+                <a href="#about" class="border-2 border-white text-white px-8 py-4 rounded-lg text-lg font-semibold hover:bg-white hover:text-gray-900 transition-all duration-300">
+                    Our Story
+                </a>
+            </div>
+        </div>
+
+        <!-- Scroll indicator -->
+        <div class="absolute bottom-8 left-1/2 transform -translate-x-1/2">
+            <div class="w-6 h-10 border-2 border-white/50 rounded-full flex justify-center">
+                <div class="w-1 h-3 bg-white/70 rounded-full mt-2 animate-bounce"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Partnership Banner -->
+    <section class="bg-white py-12 border-b">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col md:flex-row items-center justify-center text-center md:text-left">
+                <div class="mb-6 md:mb-0 md:mr-12">
+                    <h3 class="text-2xl font-display font-semibold text-gray-900 mb-2">Proudly Partnered With</h3>
+                    <p class="text-gray-600">Leading brands serving our communities</p>
+                </div>
+                <div class="flex items-center space-x-8">
+                    <div class="text-center">
+                        <div class="w-24 h-24 bg-gradient-to-br from-spar-green to-green-600 rounded-xl flex items-center justify-center mb-2">
+                            <span class="text-white font-bold text-2xl">SPAR</span>
+                        </div>
+                        <p class="text-sm text-gray-600 font-medium">Convenience Stores</p>
+                    </div>
+                    <div class="text-center">
+                        <div class="w-24 h-24 bg-gradient-to-br from-yellow-400 to-green-600 rounded-xl flex items-center justify-center mb-2">
+                            <span class="text-white font-bold text-lg">Subway</span>
+                        </div>
+                        <p class="text-sm text-gray-600 font-medium">Fresh Food</p>
+                    </div>
+                    <div class="text-center">
+                        <div class="w-24 h-24 bg-gradient-to-br from-red-500 to-red-700 rounded-xl flex items-center justify-center mb-2">
+                            <span class="text-white font-bold text-lg">Texaco</span>
+                        </div>
+                        <p class="text-sm text-gray-600 font-medium">Fuel Stations</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Our Stores -->
+    <section id="stores" class="py-20 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl md:text-5xl font-display font-bold text-gray-900 mb-6">Our Store Network</h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                    12+ locations across Belfast and Northern Ireland, each tailored to serve the unique needs of their local community.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Landscape Filling Station -->
+                <div class="store-card rounded-2xl shadow-xl p-8 hover-lift">
+                    <div class="w-full h-48 bg-gradient-to-br from-spar-green to-green-700 rounded-xl mb-6 flex items-center justify-center">
+                        <div class="text-center text-white">
+                            <div class="text-4xl mb-2">⛽</div>
+                            <h4 class="font-bold text-xl">Landscape</h4>
+                            <p class="text-green-100">Filling Station</p>
+                        </div>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-3">Landscape Filling Station</h3>
+                    <p class="text-gray-600 mb-4">95 Crumlin Road, Belfast</p>
+                    <div class="space-y-2 text-sm text-gray-700 mb-6">
+                        <div class="flex items-center">
+                            <span class="w-2 h-2 bg-spar-green rounded-full mr-3"></span>
+                            <span>SPAR Convenience Store</span>
+                        </div>
+                        <div class="flex items-center">
+                            <span class="w-2 h-2 bg-spar-green rounded-full mr-3"></span>
+                            <span>Texaco Fuel Station</span>
+                        </div>
+                        <div class="flex items-center">
+                            <span class="w-2 h-2 bg-spar-green rounded-full mr-3"></span>
+                            <span>Deli Counter & Hot Food</span>
+                        </div>
+                    </div>
+                    <div class="text-sm text-gray-600">
+                        <p class="font-semibold mb-1">Opening Hours:</p>
+                        <p>Mon-Sun: 6:00 AM - 10:00 PM</p>
+                    </div>
+                </div>
+
+                <!-- SPAR Ardoyne -->
+                <div class="store-card rounded-2xl shadow-xl p-8 hover-lift">
+                    <div class="w-full h-48 bg-gradient-to-br from-blue-600 to-spar-green rounded-xl mb-6 flex items-center justify-center">
+                        <div class="text-center text-white">
+                            <div class="text-4xl mb-2">🏪</div>
+                            <h4 class="font-bold text-xl">SPAR</h4>
+                            <p class="text-blue-100">Ardoyne</p>
+                        </div>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-3">SPAR Ardoyne</h3>
+                    <p class="text-gray-600 mb-4">27-31 Ardoyne Road, Belfast</p>
+                    <div class="space-y-2 text-sm text-gray-700 mb-6">
+                        <div class="flex items-center">
+                            <span class="w-2 h-2 bg-spar-green rounded-full mr-3"></span>
+                            <span>SPAR Store</span>
+                        </div>
+                        <div class="flex items-center">
+                            <span class="w-2 h-2 bg-spar-green rounded-full mr-3"></span>
+                            <span>Subway Restaurant</span>
+                        </div>
+                        <div class="flex items-center">
+                            <span class="w-2 h-2 bg-spar-green rounded-full mr-3"></span>
+                            <span>Post Office Services</span>
+                        </div>
+                    </div>
+                    <div class="text-sm text-gray-600">
+                        <p class="font-semibold mb-1">Opening Hours:</p>
+                        <p>Mon-Sun: 7:00 AM - 10:00 PM</p>
+                    </div>
+                </div>
+
+                <!-- Rathcoole Filling Station -->
+                <div class="store-card rounded-2xl shadow-xl p-8 hover-lift">
+                    <div class="w-full h-48 bg-gradient-to-br from-purple-600 to-spar-green rounded-xl mb-6 flex items-center justify-center">
+                        <div class="text-center text-white">
+                            <div class="text-4xl mb-2">⛽</div>
+                            <h4 class="font-bold text-xl">Rathcoole</h4>
+                            <p class="text-purple-100">Filling Station</p>
+                        </div>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-3">Rathcoole Filling Station</h3>
+                    <p class="text-gray-600 mb-4">42 Doagh Road, Newtownabbey</p>
+                    <div class="space-y-2 text-sm text-gray-700 mb-6">
+                        <div class="flex items-center">
+                            <span class="w-2 h-2 bg-spar-green rounded-full mr-3"></span>
+                            <span>SPAR & Daily Deli</span>
+                        </div>
+                        <div class="flex items-center">
+                            <span class="w-2 h-2 bg-spar-green rounded-full mr-3"></span>
+                            <span>Texaco Fuel Station</span>
+                        </div>
+                        <div class="flex items-center">
+                            <span class="w-2 h-2 bg-spar-green rounded-full mr-3"></span>
+                            <span>Car Wash</span>
+                        </div>
+                    </div>
+                    <div class="text-sm text-gray-600">
+                        <p class="font-semibold mb-1">Opening Hours:</p>
+                        <p>Mon-Sun: 6:00 AM - 10:00 PM</p>
+                    </div>
+                </div>
+
+                <!-- SPAR Whitewell -->
+                <div class="store-card rounded-2xl shadow-xl p-8 hover-lift">
+                    <div class="w-full h-48 bg-gradient-to-br from-teal-600 to-spar-green rounded-xl mb-6 flex items-center justify-center">
+                        <div class="text-center text-white">
+                            <div class="text-4xl mb-2">🛒</div>
+                            <h4 class="font-bold text-xl">SPAR</h4>
+                            <p class="text-teal-100">Whitewell</p>
+                        </div>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-3">SPAR Whitewell Road</h3>
+                    <p class="text-gray-600 mb-4">95 Whitewell Road, Newtownabbey</p>
+                    <div class="space-y-2 text-sm text-gray-700 mb-6">
+                        <div class="flex items-center">
+                            <span class="w-2 h-2 bg-spar-green rounded-full mr-3"></span>
+                            <span>Full SPAR Range</span>
+                        </div>
+                        <div class="flex items-center">
+                            <span class="w-2 h-2 bg-spar-green rounded-full mr-3"></span>
+                            <span>Fresh Food Daily</span>
+                        </div>
+                        <div class="flex items-center">
+                            <span class="w-2 h-2 bg-spar-green rounded-full mr-3"></span>
+                            <span>Off-Licence</span>
+                        </div>
+                    </div>
+                    <div class="text-sm text-gray-600">
+                        <p class="font-semibold mb-1">Opening Hours:</p>
+                        <p>Mon-Sun: 7:00 AM - 9:00 PM</p>
+                    </div>
+                </div>
+
+                <!-- YoggieBerrie -->
+                <div class="store-card rounded-2xl shadow-xl p-8 hover-lift">
+                    <div class="w-full h-48 bg-gradient-to-br from-pink-500 to-orange-500 rounded-xl mb-6 flex items-center justify-center">
+                        <div class="text-center text-white">
+                            <div class="text-4xl mb-2">🍦</div>
+                            <h4 class="font-bold text-xl">YoggieBerrie</h4>
+                            <p class="text-pink-100">Dessert Lounge</p>
+                        </div>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-3">YoggieBerrie Fortwilliam</h3>
+                    <p class="text-gray-600 mb-4">551 Antrim Road, Belfast</p>
+                    <div class="space-y-2 text-sm text-gray-700 mb-6">
+                        <div class="flex items-center">
+                            <span class="w-2 h-2 bg-spar-green rounded-full mr-3"></span>
+                            <span>Frozen Yogurt Bar</span>
+                        </div>
+                        <div class="flex items-center">
+                            <span class="w-2 h-2 bg-spar-green rounded-full mr-3"></span>
+                            <span>Artisan Coffee</span>
+                        </div>
+                        <div class="flex items-center">
+                            <span class="w-2 h-2 bg-spar-green rounded-full mr-3"></span>
+                            <span>28 Seater Café</span>
+                        </div>
+                    </div>
+                    <div class="text-sm text-gray-600">
+                        <p class="font-semibold mb-1">Opening Hours:</p>
+                        <p>Mon-Sun: 9:00 AM - 9:00 PM</p>
+                    </div>
+                </div>
+
+                <!-- Store Network Summary -->
+                <div class="store-card rounded-2xl shadow-xl p-8 hover-lift bg-gradient-to-br from-gray-900 to-spar-green text-white">
+                    <div class="text-center">
+                        <div class="text-5xl mb-4">📍</div>
+                        <h3 class="text-2xl font-bold mb-3">Store Network</h3>
+                        <div class="space-y-3">
+                            <div class="text-3xl font-bold">12+</div>
+                            <p class="text-lg">Locations Across NI</p>
+                        </div>
+                        <div class="mt-6 pt-6 border-t border-white/20">
+                            <div class="grid grid-cols-2 gap-4 text-center">
+                                <div>
+                                    <div class="text-xl font-bold">250+</div>
+                                    <p class="text-sm text-gray-200">Staff Members</p>
+                                </div>
+                                <div>
+                                    <div class="text-xl font-bold">5M+</div>
+                                    <p class="text-sm text-gray-200">Customers Annually</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About The Wall Group -->
+    <section id="about" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+                <div>
+                    <h2 class="text-4xl md:text-5xl font-display font-bold text-gray-900 mb-8">
+                        Building Communities Since 2008
+                    </h2>
+                    <div class="space-y-6 text-lg text-gray-700 leading-relaxed">
+                        <p>
+                            The Wall Group began with a single phone call in October 2008 about a small filling station on Crumlin Road. 
+                            What started as a 468 square foot operation has grown into Northern Ireland's most dynamic convenience retail network.
+                        </p>
+                        <p>
+                            Founded by <strong class="text-gray-900">Gavan Wall</strong>, a former criminal barrister who left his legal career to pursue his passion for business, 
+                            The Wall Group now operates 12+ stores across Belfast and Northern Ireland, employing over 250 staff members.
+                        </p>
+                        <p>
+                            From SPAR convenience stores to Subway restaurants, from innovative concepts like YoggieBerrie to essential fuel stations, 
+                            we're committed to being <strong class="text-spar-green">at the heart of every community we serve</strong>.
+                        </p>
+                    </div>
+                    <div class="mt-10 grid grid-cols-2 gap-8">
+                        <div class="text-center">
+                            <div class="text-4xl font-bold text-spar-green mb-2">15+</div>
+                            <p class="text-gray-600 font-medium">Years of Growth</p>
+                        </div>
+                        <div class="text-center">
+                            <div class="text-4xl font-bold text-spar-green mb-2">£7M+</div>
+                            <p class="text-gray-600 font-medium">Annual Turnover</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="lg:pl-8">
+                    <div class="relative">
+                        <div class="w-full h-96 bg-gradient-to-br from-spar-green to-blue-900 rounded-3xl shadow-2xl flex items-center justify-center">
+                            <div class="text-center text-white p-8">
+                                <div class="text-6xl mb-6">🏢</div>
+                                <h3 class="text-2xl font-bold mb-4">The Wall Group</h3>
+                                <p class="text-lg text-gray-200 leading-relaxed">
+                                    "We're unique in that we're trying to build a business of scale in Belfast. 
+                                    We're not afraid of failure. We will achieve it."
+                                </p>
+                                <div class="mt-6">
+                                    <p class="font-semibold">— Gavan Wall, Founder</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="absolute -bottom-6 -right-6 w-24 h-24 bg-yellow-400 rounded-2xl shadow-lg flex items-center justify-center">
+                            <span class="text-2xl">⭐</span>
+                        </div>
+                        <div class="absolute -top-4 -left-4 w-20 h-20 bg-orange-500 rounded-full shadow-lg flex items-center justify-center">
+                            <span class="text-white text-xl font-bold">NI</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services -->
+    <section id="services" class="py-20 service-gradient">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl md:text-5xl font-display font-bold text-gray-900 mb-6">Complete Convenience Solutions</h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                    From fuel and groceries to hot food and specialty services, we provide everything your community needs.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div class="bg-white rounded-2xl p-6 shadow-lg hover-lift text-center">
+                    <div class="w-16 h-16 bg-gradient-to-br from-red-500 to-red-700 rounded-2xl flex items-center justify-center mx-auto mb-4">
+                        <span class="text-white text-2xl">⛽</span>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-3">Fuel Stations</h3>
+                    <p class="text-gray-600">Premium Texaco fuel with competitive pricing and loyalty rewards.</p>
+                </div>
+
+                <div class="bg-white rounded-2xl p-6 shadow-lg hover-lift text-center">
+                    <div class="w-16 h-16 bg-gradient-to-br from-spar-green to-green-700 rounded-2xl flex items-center justify-center mx-auto mb-4">
+                        <span class="text-white text-2xl">🛒</span>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-3">SPAR Stores</h3>
+                    <p class="text-gray-600">Full convenience store range with fresh produce and daily essentials.</p>
+                </div>
+
+                <div class="bg-white rounded-2xl p-6 shadow-lg hover-lift text-center">
+                    <div class="w-16 h-16 bg-gradient-to-br from-yellow-500 to-green-600 rounded-2xl flex items-center justify-center mx-auto mb-4">
+                        <span class="text-white text-2xl">🥪</span>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-3">Fresh Food</h3>
+                    <p class="text-gray-600">Subway restaurants, deli counters, and hot food prepared daily.</p>
+                </div>
+
+                <div class="bg-white rounded-2xl p-6 shadow-lg hover-lift text-center">
+                    <div class="w-16 h-16 bg-gradient-to-br from-purple-500 to-pink-600 rounded-2xl flex items-center justify-center mx-auto mb-4">
+                        <span class="text-white text-2xl">🍦</span>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-3">YoggieBerrie</h3>
+                    <p class="text-gray-600">Artisan frozen yogurt, ice cream, and specialty coffee experiences.</p>
+                </div>
+
+                <div class="bg-white rounded-2xl p-6 shadow-lg hover-lift text-center">
+                    <div class="w-16 h-16 bg-gradient-to-br from-blue-500 to-blue-700 rounded-2xl flex items-center justify-center mx-auto mb-4">
+                        <span class="text-white text-2xl">🏪</span>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-3">Off-Licence</h3>
+                    <p class="text-gray-600">TheFlacky Off Sales with comprehensive wine, beer, and spirits selection.</p>
+                </div>
+
+                <div class="bg-white rounded-2xl p-6 shadow-lg hover-lift text-center">
+                    <div class="w-16 h-16 bg-gradient-to-br from-green-500 to-teal-600 rounded-2xl flex items-center justify-center mx-auto mb-4">
+                        <span class="text-white text-2xl">📮</span>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-3">Post Office</h3>
+                    <p class="text-gray-600">Full postal services, banking, and government services at select locations.</p>
+                </div>
+
+                <div class="bg-white rounded-2xl p-6 shadow-lg hover-lift text-center">
+                    <div class="w-16 h-16 bg-gradient-to-br from-indigo-500 to-purple-600 rounded-2xl flex items-center justify-center mx-auto mb-4">
+                        <span class="text-white text-2xl">💳</span>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-3">Financial Services</h3>
+                    <p class="text-gray-600">ATM services, lottery tickets, and bill payment facilities.</p>
+                </div>
+
+                <div class="bg-white rounded-2xl p-6 shadow-lg hover-lift text-center">
+                    <div class="w-16 h-16 bg-gradient-to-br from-cyan-500 to-blue-600 rounded-2xl flex items-center justify-center mx-auto mb-4">
+                        <span class="text-white text-2xl">🚿</span>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-3">Car Wash</h3>
+                    <p class="text-gray-600">Professional car wash services at select filling station locations.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Community & Impact -->
+    <section class="py-20 bg-gradient-to-br from-spar-green to-blue-900 text-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl md:text-5xl font-display font-bold mb-6">Community First</h2>
+                <p class="text-xl text-gray-200 max-w-3xl mx-auto">
+                    We believe in investing in the communities we serve, creating opportunities and breaking down barriers across Northern Ireland.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="text-center p-8 bg-white/10 rounded-2xl backdrop-blur-sm">
+                    <div class="text-5xl mb-4">🤝</div>
+                    <h3 class="text-2xl font-bold mb-4">Cross-Community Employment</h3>
+                    <p class="text-gray-200 leading-relaxed">
+                        We actively encourage our staff to work across different community stores, 
+                        breaking down traditional barriers and building lasting friendships.
+                    </p>
+                </div>
+
+                <div class="text-center p-8 bg-white/10 rounded-2xl backdrop-blur-sm">
+                    <div class="text-5xl mb-4">💼</div>
+                    <h3 class="text-2xl font-bold mb-4">Local Employment</h3>
+                    <p class="text-gray-200 leading-relaxed">
+                        With 250+ staff members across our network, we're one of the largest private employers 
+                        in North and West Belfast, providing career development opportunities.
+                    </p>
+                </div>
+
+                <div class="text-center p-8 bg-white/10 rounded-2xl backdrop-blur-sm">
+                    <div class="text-5xl mb-4">🎯</div>
+                    <h3 class="text-2xl font-bold mb-4">Community Investment</h3>
+                    <p class="text-gray-200 leading-relaxed">
+                        From sponsoring local sports teams to supporting community events, 
+                        we reinvest our success back into the neighborhoods we call home.
+                    </p>
+                </div>
+            </div>
+
+            <div class="text-center mt-16">
+                <div class="inline-flex items-center bg-white/20 rounded-full px-8 py-4 backdrop-blur-sm">
+                    <span class="text-2xl mr-4">🌟</span>
+                    <span class="text-lg font-semibold">#BackinNorthBelfast #BackinWestBelfast</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Careers -->
+    <section id="careers" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl md:text-5xl font-display font-bold text-gray-900 mb-6">Join Our Growing Team</h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                    Be part of Northern Ireland's fastest-growing convenience retail network. We're looking for passionate people to help us expand to 28 stores by 2030.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="bg-gray-50 rounded-2xl p-8 hover-lift">
+                    <div class="w-16 h-16 bg-gradient-to-br from-spar-green to-green-700 rounded-2xl flex items-center justify-center mb-6">
+                        <span class="text-white text-2xl">👥</span>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-3">Store Management</h3>
+                    <p class="text-gray-600 mb-6">Lead our store teams and drive community engagement. Full training provided.</p>
+                    <ul class="space-y-2 text-sm text-gray-700 mb-6">
+                        <li class="flex items-center">
+                            <span class="w-1.5 h-1.5 bg-spar-green rounded-full mr-3"></span>
+                            <span>Competitive salary + bonuses</span>
+                        </li>
+                        <li class="flex items-center">
+                            <span class="w-1.5 h-1.5 bg-spar-green rounded-full mr-3"></span>
+                            <span>Management development program</span>
+                        </li>
+                        <li class="flex items-center">
+                            <span class="w-1.5 h-1.5 bg-spar-green rounded-full mr-3"></span>
+                            <span>Career progression opportunities</span>
+                        </li>
+                    </ul>
+                    <a href="#contact" class="text-spar-green font-semibold hover:text-green-700 transition-colors">Apply Now →</a>
+                </div>
+
+                <div class="bg-gray-50 rounded-2xl p-8 hover-lift">
+                    <div class="w-16 h-16 bg-gradient-to-br from-blue-500 to-blue-700 rounded-2xl flex items-center justify-center mb-6">
+                        <span class="text-white text-2xl">🛒</span>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-3">Sales Associates</h3>
+                    <p class="text-gray-600 mb-6">Be the friendly face of our stores. Perfect for those starting their retail career.</p>
+                    <ul class="space-y-2 text-sm text-gray-700 mb-6">
+                        <li class="flex items-center">
+                            <span class="w-1.5 h-1.5 bg-spar-green rounded-full mr-3"></span>
+                            <span>Flexible working hours</span>
+                        </li>
+                        <li class="flex items-center">
+                            <span class="w-1.5 h-1.5 bg-spar-green rounded-full mr-3"></span>
+                            <span>Comprehensive training</span>
+                        </li>
+                        <li class="flex items-center">
+                            <span class="w-1.5 h-1.5 bg-spar-green rounded-full mr-3"></span>
+                            <span>Staff discounts</span>
+                        </li>
+                    </ul>
+                    <a href="#contact" class="text-spar-green font-semibold hover:text-green-700 transition-colors">Apply Now →</a>
+                </div>
+
+                <div class="bg-gray-50 rounded-2xl p-8 hover-lift">
+                    <div class="w-16 h-16 bg-gradient-to-br from-yellow-500 to-orange-600 rounded-2xl flex items-center justify-center mb-6">
+                        <span class="text-white text-2xl">🍔</span>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-3">Food Service Team</h3>
+                    <p class="text-gray-600 mb-6">Join our Subway restaurants and deli teams. Food preparation experience preferred.</p>
+                    <ul class="space-y-2 text-sm text-gray-700 mb-6">
+                        <li class="flex items-center">
+                            <span class="w-1.5 h-1.5 bg-spar-green rounded-full mr-3"></span>
+                            <span>Food hygiene certification provided</span>
+                        </li>
+                        <li class="flex items-center">
+                            <span class="w-1.5 h-1.5 bg-spar-green rounded-full mr-3"></span>
+                            <span>Fast-paced environment</span>
+                        </li>
+                        <li class="flex items-center">
+                            <span class="w-1.5 h-1.5 bg-spar-green rounded-full mr-3"></span>
+                            <span>Team bonuses</span>
+                        </li>
+                    </ul>
+                    <a href="#contact" class="text-spar-green font-semibold hover:text-green-700 transition-colors">Apply Now →</a>
+                </div>
+            </div>
+
+            <div class="mt-16 text-center">
+                <div class="bg-gradient-to-r from-spar-green to-blue-900 rounded-2xl p-8 text-white">
+                    <h3 class="text-2xl font-bold mb-4">Ready to Grow With Us?</h3>
+                    <p class="text-lg mb-6 text-gray-200">
+                        We're expanding to 28 stores by 2030. Be part of our ambitious growth story.
+                    </p>
+                    <a href="#contact" class="bg-white text-spar-green px-8 py-3 rounded-lg font-semibold hover:bg-gray-100 transition-colors">
+                        View All Opportunities
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="py-20 bg-gray-900 text-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl md:text-5xl font-display font-bold mb-6">Get in Touch</h2>
+                <p class="text-xl text-gray-300 max-w-3xl mx-auto">
+                    Whether you're looking to visit one of our stores, explore career opportunities, or discuss business partnerships, we'd love to hear from you.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-16">
+                <div>
+                    <h3 class="text-2xl font-bold mb-8">Store Locations</h3>
+                    <div class="space-y-6">
+                        <div class="flex items-start space-x-4">
+                            <div class="w-8 h-8 bg-spar-green rounded-lg flex items-center justify-center mt-1">
+                                <span class="text-white text-sm">📍</span>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold text-lg">Landscape Filling Station</h4>
+                                <p class="text-gray-400">95 Crumlin Road, Belfast</p>
+                                <p class="text-gray-400">6:00 AM - 10:00 PM Daily</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start space-x-4">
+                            <div class="w-8 h-8 bg-spar-green rounded-lg flex items-center justify-center mt-1">
+                                <span class="text-white text-sm">📍</span>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold text-lg">SPAR Ardoyne</h4>
+                                <p class="text-gray-400">27-31 Ardoyne Road, Belfast</p>
+                                <p class="text-gray-400">7:00 AM - 10:00 PM Daily</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start space-x-4">
+                            <div class="w-8 h-8 bg-spar-green rounded-lg flex items-center justify-center mt-1">
+                                <span class="text-white text-sm">📍</span>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold text-lg">Rathcoole Filling Station</h4>
+                                <p class="text-gray-400">42 Doagh Road, Newtownabbey</p>
+                                <p class="text-gray-400">6:00 AM - 10:00 PM Daily</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="mt-12">
+                        <h3 class="text-2xl font-bold mb-6">Business Enquiries</h3>
+                        <div class="space-y-4">
+                            <div class="flex items-center space-x-3">
+                                <span class="text-spar-green">📧</span>
+                                <span>info@wallgroup.co.uk</span>
+                            </div>
+                            <div class="flex items-center space-x-3">
+                                <span class="text-spar-green">📱</span>
+                                <span>028 9074 2100</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div>
+                    <div class="bg-white/5 rounded-2xl p-8 backdrop-blur-sm">
+                        <h3 class="text-2xl font-bold mb-6">Send us a Message</h3>
+                        <form class="space-y-6">
+                            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                                <div>
+                                    <label class="block text-sm font-medium mb-2">First Name</label>
+                                    <input type="text" class="w-full px-4 py-3 rounded-lg bg-white/10 border border-white/20 text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-spar-green" placeholder="John">
+                                </div>
+                                <div>
+                                    <label class="block text-sm font-medium mb-2">Last Name</label>
+                                    <input type="text" class="w-full px-4 py-3 rounded-lg bg-white/10 border border-white/20 text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-spar-green" placeholder="Doe">
+                                </div>
+                            </div>
+
+                            <div>
+                                <label class="block text-sm font-medium mb-2">Email</label>
+                                <input type="email" class="w-full px-4 py-3 rounded-lg bg-white/10 border border-white/20 text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-spar-green" placeholder="john@example.com">
+                            </div>
+
+                            <div>
+                                <label class="block text-sm font-medium mb-2">Subject</label>
+                                <select class="w-full px-4 py-3 rounded-lg bg-white/10 border border-white/20 text-white focus:outline-none focus:ring-2 focus:ring-spar-green">
+                                    <option value="">Choose a subject</option>
+                                    <option value="careers">Career Opportunities</option>
+                                    <option value="business">Business Partnership</option>
+                                    <option value="customer">Customer Feedback</option>
+                                    <option value="other">Other Enquiry</option>
+                                </select>
+                            </div>
+
+                            <div>
+                                <label class="block text-sm font-medium mb-2">Message</label>
+                                <textarea rows="4" class="w-full px-4 py-3 rounded-lg bg-white/10 border border-white/20 text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-spar-green" placeholder="Tell us how we can help..."></textarea>
+                            </div>
+
+                            <button type="submit" class="w-full bg-spar-green text-white px-6 py-3 rounded-lg font-semibold hover:bg-green-700 transition-colors">
+                                Send Message
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-black text-white py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div class="md:col-span-2">
+                    <div class="flex items-center space-x-3 mb-6">
+                        <span class="text-3xl font-display font-bold gradient-bg bg-clip-text text-transparent">The Wall Group</span>
+                    </div>
+                    <p class="text-gray-400 mb-6 max-w-md">
+                        At the heart of the community since 2008. Serving 5+ million customers annually across our network of SPAR stores, Subway restaurants, and filling stations.
+                    </p>
+                    <div class="flex space-x-4">
+                        <div class="w-10 h-10 bg-spar-green rounded-lg flex items-center justify-center">
+                            <span class="text-white text-lg">f</span>
+                        </div>
+                        <div class="w-10 h-10 bg-spar-green rounded-lg flex items-center justify-center">
+                            <span class="text-white text-lg">📷</span>
+                        </div>
+                        <div class="w-10 h-10 bg-spar-green rounded-lg flex items-center justify-center">
+                            <span class="text-white text-lg">in</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Quick Links</h3>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><a href="#stores" class="hover:text-spar-green transition-colors">Store Locations</a></li>
+                        <li><a href="#about" class="hover:text-spar-green transition-colors">About Us</a></li>
+                        <li><a href="#careers" class="hover:text-spar-green transition-colors">Careers</a></li>
+                        <li><a href="#contact" class="hover:text-spar-green transition-colors">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Our Brands</h3>
+                    <ul class="space-y-2 text-gray-400">
+                        <li>SPAR Stores</li>
+                        <li>Subway Restaurants</li>
+                        <li>YoggieBerrie</li>
+                        <li>Texaco Filling Stations</li>
+                        <li>Post Office Services</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="border-t border-gray-800 mt-12 pt-8 text-center text-gray-500">
+                <p>&copy; 2024 The Wall Group. All rights reserved. At the heart of the community.</p>
+                <p class="mt-2">#BackinNorthBelfast #BackinWestBelfast</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Mobile menu toggle
+        const mobileMenuButton = document.querySelector('[data-mobile-menu]');
+        const mobileMenu = document.querySelector('[data-mobile-menu-content]');
+        
+        if (mobileMenuButton && mobileMenu) {
+            mobileMenuButton.addEventListener('click', () => {
+                mobileMenu.classList.toggle('hidden');
+            });
+        }
+    </script>
+</body>
+</html>
